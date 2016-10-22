@@ -72,7 +72,7 @@ $(function() {
        // 
        // $ts='<div id="template-settings"><a class="option-toggle"><i class="fa fa-cog" aria-hidden="true"></i></a><div class="dnd"></div></div>';
 
-       $ts='<div id="template-settings"> <a class="option-toggle"><i class="fa fa-cog" aria-hidden="true"></i></a> <ul class="panel-tabs"> <li class="tab-link current" data-tab="tab-1">Layout</li><li class="tab-link" data-tab="tab-2">Support</li><li class="tab-link" data-tab="tab-3">Templates</li></ul> <div id="tab-1" class="tab-content current"> <div class="dnd"></div></div><div id="tab-2" class="tab-content"> tab2 </div><div id="tab-3" class="tab-content"> tab 3 </div></div>';
+       $ts='<a class="option-toggle"><img src="img/gear.png" alt=""></a><div id="template-settings"> <div class="cpanel-head"> <ul class="panel-tabs"> <li class="tab-link current" data-tab="tab-1">Layout</li><li class="tab-link" data-tab="tab-2">Support</li><li class="tab-link " data-tab="tab-3">Templates</li></ul> </div><div class="cpanel-body"> <div id="tab-1" class="tab-content current"> <h5 class="tab-title"> Drag &amp; Drop </h5> <div class="dnd"> </div></div><div id="tab-2" class="tab-content"> <h5 class="tab-title"> Tab Title </h5> </div><div id="tab-3" class="tab-content"> <h5 class="tab-title"> Other Templates </h5> <div id="template-list"> </div></div></div><div class="cpanel-footer"> </div></div>';
         
        $('body').prepend($ts);
 
@@ -86,7 +86,7 @@ $(function() {
 
        $('.option-toggle').click(function() {
             $('#template-settings').toggleClass('sleep');
-            
+            $(this).toggleClass('sleep');
             $('.sortable-element').toggleClass('sortable-element-minimized');
        }); 
 

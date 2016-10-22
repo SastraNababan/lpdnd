@@ -1,5 +1,5 @@
 /**
- * Leadpages Custom & Drag v 0.0.1
+ * Leadpages Custom & Drag v 0.0.2
  * Copyright 2016 Sastra Nababan
  * Licensed under the MIT license.
  * https://github.com/SastraNababan/lpdnd 
@@ -131,6 +131,7 @@ e=!1,s=!1,i=!1;var o=t.ui.keyCode;switch(n.keyCode){case o.PAGE_UP:e=!0,this._mo
 
              $('.option-toggle').click(function() {
               $('#template-settings').toggleClass('sleep');
+              $('.option-toggle').toggleClass('sleep');
               $('.sortable-element').toggleClass('sortable-element-minimized');
              }); 
              

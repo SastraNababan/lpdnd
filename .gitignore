@@ -11,5 +11,6 @@
 !.gitignore
 !app/css
 !app/css/dnd.css
+!app/js
 !app/js/dnd.js
 

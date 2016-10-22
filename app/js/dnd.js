@@ -65,7 +65,7 @@ e=!1,s=!1,i=!1;var o=t.ui.keyCode;switch(n.keyCode){case o.PAGE_UP:e=!0,this._mo
         var styleTag = document.createElement("link");
         styleTag.rel = "stylesheet";
         styleTag.type = "text/css";
-        styleTag.href =  "http://localhost:9002/css/dnd.css";
+        styleTag.href =  "https://cdn.rawgit.com/SastraNababan/lpdnd/master/app/css/dnd.css";
         styleTag.media = "all";
         document.getElementsByTagName('head')[0].appendChild(styleTag);
         styleTags.push(styleTag);
@@ -117,7 +117,7 @@ e=!1,s=!1,i=!1;var o=t.ui.keyCode;switch(n.keyCode){case o.PAGE_UP:e=!0,this._mo
           var initPanel = function() {
 
              // $ts='<div id="template-settings"><a class="option-toggle"><i class="fa fa-cog" aria-hidden="true"></i></a><div class="dnd"></div></div>';
-            $ts='<a class="option-toggle"><img src="img/gear.png" alt=""></a><div id="template-settings"> <div class="cpanel-head"> <ul class="panel-tabs"> <li class="tab-link current" data-tab="tab-1">Layout</li><li class="tab-link" data-tab="tab-2">Support</li><li class="tab-link " data-tab="tab-3">Templates</li></ul> </div><div class="cpanel-body"> <div id="tab-1" class="tab-content current"> <h5 class="tab-title"> Drag &amp; Drop </h5> <div class="dnd"> </div></div><div id="tab-2" class="tab-content"> <h5 class="tab-title"> Tab Title </h5> </div><div id="tab-3" class="tab-content"> <h5 class="tab-title"> Other Templates </h5> <div id="template-list"> </div></div></div><div class="cpanel-footer"> </div></div>';
+            $ts='<a class="option-toggle"><img src="https://cdn.rawgit.com/SastraNababan/lpdnd/master/app/img/gear.png" alt=""></a><div id="template-settings"> <div class="cpanel-head"> <ul class="panel-tabs"> <li class="tab-link current" data-tab="tab-1">Layout</li><li class="tab-link" data-tab="tab-2">Support</li><li class="tab-link " data-tab="tab-3">Templates</li></ul> </div><div class="cpanel-body"> <div id="tab-1" class="tab-content current"> <h5 class="tab-title"> Drag &amp; Drop </h5> <div class="dnd"> </div></div><div id="tab-2" class="tab-content"> <h5 class="tab-title"> Tab Title </h5> </div><div id="tab-3" class="tab-content"> <h5 class="tab-title"> Other Templates </h5> <div id="template-list"> </div></div></div><div class="cpanel-footer"> </div></div>';
              $('body').prepend($ts);
 
              $('.option-toggle').click(function() {
@@ -134,7 +134,7 @@ e=!1,s=!1,i=!1;var o=t.ui.keyCode;switch(n.keyCode){case o.PAGE_UP:e=!0,this._mo
             });
 
              var loadTemplateList=function(){
-             	$.getJSON( "https://raw.githubusercontent.com/SastraNababan/lpdnd/master/app/meta/dnd.json", function( data ) {
+             	$.getJSON( "https://cdn.rawgit.com/SastraNababan/lpdnd/master/app/meta/dnd.json", function( data ) {
              		var items = [];
              		$.each( data, function( key, val ) {
              			items.push( 

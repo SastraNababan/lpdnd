@@ -13,4 +13,7 @@
 !app/css/dnd.css
 !app/js
 !app/js/dnd.js
+!app/meta
+!app/meta/dnd.json
+
 

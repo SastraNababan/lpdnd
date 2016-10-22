@@ -1,0 +1,15 @@
+# Ignore all directories, and all sub-directories, and it's contents:
+*/*
+
+#Now ignore all files in the current directory 
+#(This fails to ignore files without a ".", for example 
+#'file.txt' works, but 
+#'file' doesn't):
+*.*
+
+#Only Include these specific directories and subdirectories and files if you wish:
+!.gitignore
+!app/css
+!app/css/dnd.css
+!app/js/dnd.js
+

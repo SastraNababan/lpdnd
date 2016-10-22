@@ -1,0 +1,97 @@
+/* ==========================================================================
+   Panel
+   ========================================================================== */
+/****** PANEL STYLE ******/
+.sortable-item,
+.sortable-panel {
+  overflow: hidden;
+  background: #fff; }
+
+.sortable-panel-header {
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px #ccc solid; }
+  .sortable-panel-header h5 {
+    margin: 0; }
+  .sortable-panel-header .panel-control {
+    display: block;
+    clear: both; }
+    .sortable-panel-header .panel-control .move-left {
+      display: block;
+      float: left; }
+    .sortable-panel-header .panel-control .mize {
+      display: block;
+      float: right; }
+
+.sortable-panel {
+  padding: 20px;
+  overflow-y: scroll;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  z-index: 10001; }
+
+ul.sortable-items {
+  margin: 0; }
+
+.sortable-items {
+  padding-left: 0;
+  list-style: none;
+  font-size: 14px;
+  font-weight: 300;
+  margin-top: 20px; }
+
+.sortable-item {
+  margin: 8px 0;
+  padding: 5px 10px;
+  border: 1px solid #DCDCDC;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  cursor: move;
+  overflow: visible;
+  font-size: 12px;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 2px;
+  width: 200px;
+  color: #303133; }
+
+.sortable-item:hover {
+  background: #303133;
+  color: #fff; }
+
+.sortable-element {
+  position: relative; }
+
+.sortable-element-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 5px 20px;
+  z-index: 1001;
+  background: #ad0e45;
+  color: #fff; }
+
+.sortable-element-hover .sortable-element-overlay {
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  background: rgba(173, 14, 69, 0.5); }
+
+.sortable-element-left .sortable-element-overlay {
+  left: 0;
+  right: inherit; }
+
+.sortable-element-minimized .sortable-element-overlay {
+  display: none; }
+
+.card-1 {
+  /*   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1); */ }
+
+.social:before {
+  font-family: FontAwesome;
+  font-style: normal; }
+
+.clearfix {
+  clear: both; }

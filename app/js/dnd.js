@@ -1,5 +1,5 @@
 /**
- * Leadpages Custom & Drag v 0.0.2
+ * Leadpages Custom & Drag v 0.0.3
  * Copyright 2016 Sastra Nababan
  * Licensed under the MIT license.
  * https://github.com/SastraNababan/lpdnd 
@@ -57,7 +57,7 @@ e=!1,s=!1,i=!1;var o=t.ui.keyCode;switch(n.keyCode){case o.PAGE_UP:e=!0,this._mo
 
 
   var scriptTags = document.getElementsByTagName('script');
-  var thisRequestUrl = 'https://cdn.rawgit.com/SastraNababan/lpdnd/master/app/js/dnd.js';
+  var thisRequestUrl = 'https://raw.githubusercontent.com/SastraNababan/lpdnd/master/app/js/dnd.js';
 
 
   for(var i = 0; i < scriptTags.length; i++) {

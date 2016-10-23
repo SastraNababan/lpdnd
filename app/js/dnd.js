@@ -57,14 +57,16 @@ e=!1,s=!1,i=!1;var o=t.ui.keyCode;switch(n.keyCode){case o.PAGE_UP:e=!0,this._mo
 
 
   var scriptTags = document.getElementsByTagName('script');
-  var thisRequestUrl = 'https://cdn.rawgit.com/SastraNababan/lpdnd/master/app/js/dnd.js';
+  var thisRequestUrl = 'dnd.js';
 
 
   for(var i = 0; i < scriptTags.length; i++) {
     var scriptTag = scriptTags[i];
+    var scName = scriptTags[i].src.split('/');
+	 var scriptName = scName[scName.length - 1];
       
     // src matches the url of this request, and not processed it yet.
-    if (scriptTag.src == thisRequestUrl && processedScripts.indexOf(scriptTag) < 0) {
+    if (scriptName == thisRequestUrl && processedScripts.indexOf(scriptTag) < 0) {
        
       processedScripts.push(scriptTag);
 
@@ -74,7 +76,7 @@ e=!1,s=!1,i=!1;var o=t.ui.keyCode;switch(n.keyCode){case o.PAGE_UP:e=!0,this._mo
         var styleTag = document.createElement("link");
         styleTag.rel = "stylesheet";
         styleTag.type = "text/css";
-        styleTag.href =  "https://cdn.rawgit.com/SastraNababan/lpdnd/master/app/css/dnd.css";
+        styleTag.href =  "http://leadpages.sastranababan.com/dnd/dnd.css";
         styleTag.media = "all";
         document.getElementsByTagName('head')[0].appendChild(styleTag);
         styleTags.push(styleTag);
@@ -142,7 +144,7 @@ e=!1,s=!1,i=!1;var o=t.ui.keyCode;switch(n.keyCode){case o.PAGE_UP:e=!0,this._mo
             });
 
              var loadTemplateList=function(){
-             	$.getJSON( "https://cdn.rawgit.com/SastraNababan/lpdnd/master/app/meta/dnd.json", function( data ) {
+             	$.getJSON( "https://api.myjson.com/bins/13fhw", function( data ) {
              		var items = [];
              		$.each( data, function( key, val ) {
              			items.push( 
@@ -289,13 +291,13 @@ e=!1,s=!1,i=!1;var o=t.ui.keyCode;switch(n.keyCode){case o.PAGE_UP:e=!0,this._mo
            
 
           if (window.top.App){
-            initPanel();
-            } else {
-                if (window.LeadPageData && window.LeadPageData.componentOrder) {
-                    var data = JSON.parse(window.LeadPageData.componentOrder.value || '[]');
-                    render(data);
-                }
-            }       
+          	initPanel();
+          } else {
+          	if (window.LeadPageData && window.LeadPageData.componentOrder) {
+          		var data = JSON.parse(window.LeadPageData.componentOrder.value || '[]');
+          		render(data);
+          	}
+          }       
 
       })();
 
